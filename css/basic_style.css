@@ -18,7 +18,7 @@ h1 {
 
 /* Select all squares in the array */
 .container .squares:nth-child(-n+4) {
-    background-image: url("../images/icons/icon1");
+    background-image: url("../images/icons/icon1.png");
     color: #fff;
     float: left;
     width: 100px;
