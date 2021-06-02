@@ -18,7 +18,7 @@ h1 {
 
 /* Select all squares in the array */
 .container .squares:nth-child(-n+4) {
-    background-image: url("../images/icons/icon2");
+    background-image: url("../images/icons/icon1");
     color: #fff;
     float: left;
     width: 100px;
@@ -27,12 +27,13 @@ h1 {
     border: 1px solid black;
     border-radius: 25%;
     cursor: pointer;
+    transition: transform .5s ease-in-out;
 }
 
 /* Select all squares paragraphs in the array */
 .container .squares:nth-child(-n+4) p {
     font-family: "Helvetica Neue", "Helvetica, Arial, sans-serif";
-    font-size: 1.5cm;
+    font-size: .8cm;
     font-weight: 900;
     text-align: center;
     margin: 0;
@@ -58,7 +59,7 @@ h1 {
 
 /* Hover Effects */
 .container .squares:nth-child(-n+4):hover {
-    background-image: url("../images/icons/icon1.png");
+    background-image: url("../images/icons/icon2.png");
     transform: scale(.5);
     animation-name: race;
     animation-duration: 2.5s;
@@ -93,7 +94,7 @@ h1 {
 @keyframes race {
     0%, 100% {
         transform: translateY(0px);
-        background-image: url("../images/icons/icon1.png");
+        background-image: url("../images/icons/icon2.png");
     }
     50% {
         transform: translateY(330px);
