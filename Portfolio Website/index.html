@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Tabitha Yoerger</title>
+        <link rel="stylesheet" type="text/css" href="portfolio_project.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navvar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Bg_Video">
+                <source src="ocean.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Tabitha Yoerger's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Imagination is the Discovering Faculty, pre-eminently.
+                        <br>It is that which penetrates into the unseen worlds around us, 
+                        <br>the worlds of Science.
+                    </q>
+                    </br> -Ada Lovelace
+                    <br>
+                    <br>Thanks for stopping by! Keep scrolling to find out more about my background and experience.
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="harper_beach.jpg" alt="Harper">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am currently a student at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> where I am gaining hands-on experience in multiple languages, including Python, HTML, CSS, JavaScript, SQL, and C#. 
+                    <br>
+                    <br>When not working on a project, I love to paint, play piano, and spend time outdoors with my dog, Harper, who is always a ball of energy. 
+                    <br>
+                    <br>I will be graduating in August and am excited to begin my career as a developer. I would love to work with you; <a href="#Contact">contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/tabii238" target="_blank">Tabitha's GitHub</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/tabii238" target="_blank"><img src="github.png" alt="GitHub Logo"></a>
+            </div>           
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="harper_beach2.jpg" alt="Harper">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <form action="https://formspree.io/f/mayajyvr" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Write me a message here!">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">Tabitha Yoerger &nbsp|&nbsp (903)245-9066 &nbsp|&nbsp <a href="https://www.linkedin.com/in/tabitha-yoerger-438102212/" target="_blank">LinkedIn</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>

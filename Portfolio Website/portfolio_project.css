@@ -1,0 +1,275 @@
+/***** General Styling *****/
+/* Body */
+body {
+    margin: 0% /* This ensures the site displays all the way to the edge of the screen */
+}
+
+/* Heading 1 elements */
+h1 {
+    text-transform: uppercase; /* Capitalizing all h1 headings */
+    font-family: 'Garamond', serif; 
+    text-align: center;
+    margin-top: 3%; /* Adds a small margin above h1 elements */
+    color: darkgoldenrod;
+}
+
+/* Heading 1 elements hover effect */
+h1:hover {
+    filter: grayscale(5%);
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+/* Styling for portfolio title text */
+.white-text {
+    color: #fff;
+}
+
+p {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: justify; /* justify text within paragraph elements */
+    letter-spacing: 1px; /* this expands the text slightly */
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Paragraph element hover effect */
+p:hover {
+    transition: transform 1s;
+    transform: scale(1.01); /* this makes the paragraph increase slightly in size when hovered over */
+}
+
+/* Center class - applies to all elements with the "center" class */
+.center {
+    text-align: center;
+}
+
+.center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+a {
+    color: darkgoldenrod; /* link color */
+}
+
+/* Quotation elements */
+q {
+    font-style: italic;
+}
+
+/* Image elements */
+img {
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width:100%;
+    height: 340px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    filter: grayscale(10%);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/* Styling for footer element */
+footer {
+    padding: 2%; /* Gives the footer padding that is equal to 2% of the width of the element's area */
+    background-color: whitesmoke;
+}
+/***** End of General Styling *****/
+
+/***** Navbar Styling *****/
+.Navbar {
+    overflow: hidden; /* This ensures that any content that overflows beyond the boundary of the nav bar is not displayed */
+    background-color:black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+/* moveNav animation effect for moving the nav bar in from the left of the screen */
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw}
+}
+
+/* Navbar links */
+.Navbar a{
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px; /* adds padding around the text */
+    text-decoration: none;
+    font-family: "Garamond", serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative; /* sets the text relative to its normal positioning, allowing us to use the animation below */
+    -webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 */
+    animation: moveNavText 5.75s; /* Applies the moveNavText animation for 5.75s */   
+}
+
+/* moveNavText animation effect for moving the navbar text from above the view to the navbar */
+@keyframes moveNavText {
+    from {top: -100vw;} /* sets the navbar text from above the view to the navbar */
+    to {top: 0vw;} /* lowers the navbar text onto the navbar */
+}
+
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%; /* makes each link take up 1/4 of the navbar */
+        font-size: 12px;
+    }
+}
+
+.Navbar a:hover {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+}
+
+.Navbar a.active {
+    background-color: darkgoldenrod;
+}
+
+/***** End of Navbar Styling *****/
+
+/***** Video Styling *****/
+/* Formatting for background video */
+#Bg_Video {
+    position: fixed;
+    right: 0; 
+    bottom:  0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+/* Screens that 576px and smaller will not display the video */
+@media screen and (max-width: 576px) {
+    #Bg_Video {
+        display: none;
+    }
+}
+
+/* Texts over the video */
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+/*  Causes the overlay video text to move up from the bottom of the page upon page load */
+@keyframes moveVideoText {
+    from {top: -100v2;}
+    to {top: 0vw;}
+}
+/***** End of Video Styling *****/
+
+/***** Table Styling *****/
+* {
+    box-sizing: border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: seashell;
+}
+
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: transparent;
+}
+
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+/* This inserts something after the content of selected element */
+.Row:after {
+    content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
+    display: table; /* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
+    clear: both;  /* This clears any other elements from floating on the left or the right of an element */
+}
+/***** End of Table Styling *****/
+
+/******Contact Form Styling *****/
+/* input [type=text] targets all text input sections of the contact form */
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid darkturquoise;
+    border-radius: 4px; /* slightly rounds the corners */
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Garamond', serif;
+}
+
+/* Hover effects for input boxes */
+input[type=text]:hover {
+    box-shadow: 0 0 5px darkgoldenrod inset;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Garamond', serif;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+    background-color: darkgoldenrod;
+    color: black;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+/* Form element */
+form {
+    border-radius: 5px;
+    background-color: seashell;
+    padding: 10px;
+    font-family: 'Garamond', serif;
+}
