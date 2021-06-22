@@ -1,154 +1,261 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+    <head>
+	<meta charset="utf-8">
         <title>Pacific Air Tours</title>
-		<link rel="stylesheet" href="./css/one_page.css">
+	<script src="JS/one_page_website.js" defer></script>
+	<link rel="stylesheet" href="css/one_page.css">
     </head>
 	<body>
 		
-		<! -- NAV -->
-		<div class="wrap">
-			<div class="menu-container"></div>
-				<ul class="menu">
-					<a href="#home"><li>HOME</li></a>
-					<a href="#gallery"><li>GALLERY</li></a>
-					<a href="#contact"><li>RESERVATIONS</li></a>
-				</ul>
+	<!-- NAV -->
+	<div class="wrap">
+		<div class="menu-container"></div>		
+			<ul class="menu">
+				<a href="#home"><li>HOME</li></a>
+				<a href="#gallery"><li>GALLERY</li></a>
+				<a href="#contact"><li>RESERVATIONS</li></a>
+			</ul>
+		</div>
+	</div>
+	<!-- END NAV -->
+			
+	<!-- HOME -->
+	<div id="home">
+		<div class ="container">
+			<div class="text-center">
+				<span class="head-main">Pacific Air Tours</span>
+				<p class= "head-sub-main">Explore the Northwest</p>
 			</div>
 		</div>
-		<! -- END NAV -->
+	</div>
 			
-		<! -- HOME -->
-		<div id="home">
-			<div class ="container">
-				<div class="text-center">
-					<span class="head-main">Pacific Air Tours</span>
-					<p class= "head-sub-main">Explore the Northwest</p>
+	<!-- GALLERY -->
+	<section id="gallery">
+		<div class="container">
+			<h1>GALLERY</h1>
+			<div class="flex-container">
+
+		<!-- PHOTO-CONTAINER 1 -->
+		<div class="photo-container">
+			<div class="photo">
+				<img src="./images/thumb/thumbnail_1.png" alt="Crater Lake" width=350 height=250
+					onclick="openModal();currentSlide(9)" class="hover-shadow">	
+				<div class="photo-overlay">									
+					<h3 class="white-head">CRATER LAKE</h3>
+					<p></p>
 				</div>
 			</div>
 		</div>
-			
-		<! -- GALLERY -->
-		<section id="gallery">
-			<div class="container">
-				<h1>GALLERY</h1>
-				<div class="flex-container">
+		<!-- END PHOTO-CONTAINER 1 -->
 
-					<! -- PHOTO-CONTAINER 1 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_1.png" alt="Crater Lake" width=350 height=250>	
-							<div class="photo-overlay">
-								<h3 class="white-head">CRATER LAKE</h3>
-								<p></p>
-							</div>
-						</div>
-					</div>
-					<! -- END PHOTO-CONTAINER 1 -->
-
-					<! -- PHOTO-CONTAINER 2 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_2.png" alt="Portland Skyline" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>PORTLAND</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 2 -->
-
-						<! -- PHOTO-CONTAINER 3 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_3.png" alt="Sunset in Seattle" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>SEATTLE</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 3 -->
-
-						<! -- PHOTO-CONTAINER 4 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_4.png" alt="Mt Hood National Forest" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>MT HOOD</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 4 -->
-
-						<! -- PHOTO-CONTAINER 5 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_5.png" alt="Painted Hills" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>PAINTED HILLS</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 5 -->
-
-						<! -- PHOTO-CONTAINER 6 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_6.png" alt="Oregon Coast" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>PACIFIC COAST</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 6 -->
-
-						<! -- PHOTO-CONTAINER 7 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_7.png" alt="Columbia River Gorge" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>COLUMBIA RIVER</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 7 -->
-
-						<! -- PHOTO-CONTAINER 8 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_8.png" alt="North Cascades National Park" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>CASCADES RANGE</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 8 -->
-
-						<! -- PHOTO-CONTAINER 9 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_9.png" alt="Fairy Falls" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>FAIRY FALLS</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 9 -->
-					</div>
+		<!-- PHOTO-CONTAINER 2 -->
+		<div class="photo-container">
+			<div class="photo">
+				<img src="./images/thumb/thumbnail_2.png" alt="Portland Skyline" width=350 height=250
+					onclick="openModal();currentSlide(9)" class="hover-shadow">	
+				<div class="photo-overlay">
+					<h3>PORTLAND</h3>
+					<p></p>								
 				</div>
-			</section>
-			<! -- END GALLERY -->
+			</div>
+		</div>
+		<!-- END PHOTO-CONTAINER 2 -->
+
+		<!-- PHOTO-CONTAINER 3 -->		
+		<div class="photo-container">
+			<div class="photo">
+				<img src="./images/thumb/thumbnail_3.png" alt="Sunset in Seattle" width=350 height=250
+					onclick="openModal();currentSlide(9)" class="hover-shadow">
+				<div class="photo-overlay">
+					<h3>SEATTLE</h3>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<!-- END PHOTO-CONTAINER 3 -->
+
+		<!-- PHOTO-CONTAINER 4 -->
+		<div class="photo-container">
+			<div class="photo">
+				<img src="./images/thumb/thumbnail_4.png" alt="Mt Hood National Forest" width=350 height=250
+					onclick="openModal();currentSlide(9)" class="hover-shadow">	
+				<div class="photo-overlay">
+					<h3>MT HOOD</h3>
+					<p></p>	
+				</div>
+			</div>
+		</div>					
+		<!-- END PHOTO-CONTAINER 4 -->
+
+		<!-- PHOTO-CONTAINER 5 -->		
+		<div class="photo-container">
+			<div class="photo">
+				<img src="./images/thumb/thumbnail_5.png" alt="Painted Hills" width=350 height=250
+					onclick="openModal();currentSlide(9)"  class="hover-shadow">
+				<div class="photo-overlay">
+					<h3>PAINTED HILLS</h3>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<!-- END PHOTO-CONTAINER 5 -->
+
+		<!-- PHOTO-CONTAINER 6 -->		
+		<div class="photo-container">
+			<div class="photo">
+				<img src="./images/thumb/thumbnail_6.png" alt="Oregon Coast" width=350 height=250
+					onclick="openModal();currentSlide(9)"  class="hover-shadow">	
+				<div class="photo-overlay">
+					<h3>PACIFIC COAST</h3>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<!-- END PHOTO-CONTAINER 6 -->
+
+		<!-- PHOTO-CONTAINER 7 -->		
+		<div class="photo-container">
+			<div class="photo">
+				<img src="./images/thumb/thumbnail_7.png" alt="Columbia River Gorge" width=350 height=250
+					onclick="openModal();currentSlide(9)" class="hover-shadow">	
+				<div class="photo-overlay">
+					<h3>COLUMBIA RIVER</h3>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<!-- END PHOTO-CONTAINER 7 -->
+
+		<!-- PHOTO-CONTAINER 8 -->		
+		<div class="photo-container">
+			<div class="photo">
+				<img src="./images/thumb/thumbnail_8.png" alt="North Cascades National Park" width=350 height=250 
+					onclick="openModal();currentSlide(9)"  class="hover-shadow">	
+				<div class="photo-overlay">
+					<h3>CASCADES RANGE</h3>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<!-- END PHOTO-CONTAINER 8 -->
+
+		<!-- PHOTO-CONTAINER 9 -->
+		<div class="photo-container">
+			<div class="photo">
+				<img src="./images/thumb/thumbnail_9.png" alt="Fairy Falls" width=350 height=250 
+					onclick="openModal();currentSlide(9)" class="hover-shadow">	
+				<div class="photo-overlay">
+					<h3>FAIRY FALLS</h3>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<!-- END PHOTO-CONTAINER 9 -->
+
+			<!-- Modal/Lightbox -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+						  
+				<div class="mySlides">
+					<div class="numbertext">1 / 9</div>
+					<img src="images/thumb/thumbnail_1.png">
+				</div>
+						  
+				<div class="mySlides">
+					<div class="numbertext">2 / 9</div>
+					<img src="images/thumb/thumbnail_2.png">
+				</div>
+						  
+				<div class="mySlides">
+					<div class="numbertext">3 / 9</div>
+					<img src="images/thumb/thumbnail_3.png">
+				</div>
+							  
+				<div class="mySlides">
+					<div class="numbertext">4 / 9</div>
+					<img src="images/thumb/thumbnail_4.png">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 9</div>
+					<img src="images/thumb/thumbnail_5.png">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 9</div>
+					<img src="images/thumb/thumbnail_6.png">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 9</div>
+					<img src="images/thumb/thumbnail_7.png">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 9</div>
+					<img src="images/thumb/thumbnail_8.png">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">9 / 9</div>
+					<img src="images/thumb/thumbnail_9.png">
+				</div>
+		
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					  
+				<!-- Caption text -->
+				<div class="caption-container">
+				<p id="caption"></p>
+				</div>
 			
-			<! -- RSVP -->
+						<!-- Thumbnail image controls -->
+						<div class="column">
+							<img class="demo cursor" src="images/thumb/thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="">
+	  					</div>
+  
+	  					<div class="column">
+							<img class="demo cursor" src="images/thumb/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="">
+	  					</div>
+  
+	  					<div class="column">
+							<img class="demo cursor" src="images/thumb/thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="">
+	  					</div>
+  
+						<div class="column">
+							<img class="demo cursor" src="images/thumb/thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="">
+	  					</div>
+
+	  					<div class="column">
+							<img class="demo cursor" src="images/thumb/thumbnail_5.png" style="width:100%" onclick="currentSlide(5)" alt="">
+	  					</div>
+
+	  					<div class="column">
+							<img class="demo cursor" src="images/thumb/thumbnail_6.png" style="width:100%" onclick="currentSlide(6)" alt="">
+	  					</div>
+	  					
+						<div class="column">
+							<img class="demo cursor" src="images/thumb/thumbnail_7.png" style="width:100%" onclick="currentSlide(7)" alt="">
+	  					</div>
+
+	  					<div class="column">
+							<img class="demo cursor" src="images/thumb/thumbnail_8.png" style="width:100%" onclick="currentSlide(8)" alt="">
+	  					</div>
+
+	  					<div class="column">
+							<img class="demo cursor" src="images/thumb/thumbnail_9.png" style="width:100%" onclick="currentSlide(9)" alt="">
+	  					</div>
+					</div>
+				</div>  
+			</div>
+		</div>
+	</section>
+		<!-- END GALLERY -->
+			
+			<!-- RSVP -->
 			<section id="contact">
 				<div class="container">
 					<div class="heading-padding">
@@ -192,222 +299,16 @@
 					</div>
 				</div>
 			</section>
-			<! -- END RSVP -->
+			<!-- END RSVP -->
 			
-			<! -- FOOTER -->
+			<!-- FOOTER -->
 			<div id="footer">
 				www.pacificairtours.com &nbsp;|&nbsp; &copy; 2021
 			</div>
-			<! -- END FOOTER -->
+			<!-- END FOOTER -->
 			   
         </body>
 </html>
 
 	
-=======
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-        <title>Pacific Air Tours</title>
-		<link rel="stylesheet" href="./one_page.css">
-    </head>
-	<body>
-		
-		<! -- NAV -->
-		<div class="wrap">
-			<div class="menu-container"></div>
-				<ul class="menu">
-					<a href="#home"><li>HOME</li></a>
-					<a href="#gallery"><li>GALLERY</li></a>
-					<a href="#contact"><li>RESERVATIONS</li></a>
-				</ul>
-			</div>
-		</div>
-		<! -- END NAV -->
-			
-		<! -- HOME -->
-		<div id="home">
-			<div class ="container">
-				<div class="text-center">
-					<span class="head-main">Pacific Air Tours</span>
-					<p class= "head-sub-main">Explore the Northwest</p>
-				</div>
-			</div>
-		</div>
-			
-		<! -- GALLERY -->
-		<section id="gallery">
-			<div class="container">
-				<h1>GALLERY</h1>
-				<div class="flex-container">
 
-					<! -- PHOTO-CONTAINER 1 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_1.png" alt="Crater Lake" width=350 height=250>	
-							<div class="photo-overlay">
-								<h3 class="white-head">CRATER LAKE</h3>
-								<p></p>
-							</div>
-						</div>
-					</div>
-					<! -- END PHOTO-CONTAINER 1 -->
-
-					<! -- PHOTO-CONTAINER 2 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_2.png" alt="Portland Skyline" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>PORTLAND</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 2 -->
-
-						<! -- PHOTO-CONTAINER 3 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_3.png" alt="Sunset in Seattle" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>SEATTLE</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 3 -->
-
-						<! -- PHOTO-CONTAINER 4 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_4.png" alt="Mt Hood National Forest" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>MT HOOD</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 4 -->
-
-						<! -- PHOTO-CONTAINER 5 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_5.png" alt="Painted Hills" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>PAINTED HILLS</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 5 -->
-
-						<! -- PHOTO-CONTAINER 6 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_6.png" alt="Oregon Coast" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>PACIFIC COAST</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 6 -->
-
-						<! -- PHOTO-CONTAINER 7 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_7.png" alt="Columbia River Gorge" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>COLUMBIA RIVER</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 7 -->
-
-						<! -- PHOTO-CONTAINER 8 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_8.png" alt="North Cascades National Park" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>CASCADES RANGE</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 8 -->
-
-						<! -- PHOTO-CONTAINER 9 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/thumb/thumbnail_9.png" alt="Fairy Falls" width=350 height=250>	
-								<div class="photo-overlay">
-									<h3>FAIRY FALLS</h3>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<! -- END PHOTO-CONTAINER 9 -->
-					</div>
-				</div>
-			</section>
-			<! -- END GALLERY -->
-			
-			<! -- RSVP -->
-			<section id="contact">
-				<div class="container">
-					<div class="heading-padding">
-						<h1 class="heading-padding">RESERVATIONS</h1>
-						<div class="reservations">
-							<h2><span>Short and Extended Tours | Group Rates Available</span>
-								<br/>Book your flight today!
-							</h2>
-							<p>
-								Fill out the form below to see available flights:
-							</p>
-							<div class="form-rsvp">
-								<form action="" method="post">
-									<input class="rsvp" type="text" value="" placeholder="First Name">
-									<input class="rsvp" type="text" value="" placeholder="Last Name">
-									<input class="rsvp" type="text" value="" placeholder="Email Address">
-									<input class="rsvp" type="text" value="" placeholder="Phone Number">
-									<div class="form spacer"></div>
-									<select id="tours" name="Tours">
-										<option value="Select a Tour">Select a Tour</option>
-										<option value="Crater Lake & Umpqua National Forest">Crater Lake & Umpqua National Forest</option>
-										<option value="Portland">Portland</option>
-										<option value="Seattle">Seattle</option>
-										<option value="Mt. Hood National Forest">Mt. Hood National Forest</option>
-										<option value="Painted Hills">Painted Hills</option>
-										<option value="Pacific Coast">Pacific Coast</option>
-										<option value="Columbia River">Columbia River</option>
-										<option value="North Cascades & Ross Lake">North Cascades & Ross Lake</option>
-										<option value="Fairy Falls">Fairy Falls</option>
-									</select>
-									<div class="form spacer"></div>
-										<label class="terms">Terms and Conditions</label>
-									</div>
-									<div class="submit">
-										<input type="submit" value="Check Availability">
-									</div>
-								</form>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-			<! -- END RSVP -->
-			
-			<! -- FOOTER -->
-			<div id="footer">
-				www.pacificairtours.com &nbsp;|&nbsp; &copy; 2021
-			</div>
-			<! -- END FOOTER -->
-			   
-        </body>
-</html>
-
-	
->>>>>>> 8d6c10a9581f70671b1931b789052be913eb97a4
