@@ -1,258 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-	<meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Pacific Air Tours</title>
-	<script src="JS/one_page_website.js" defer></script>
-	<link rel="stylesheet" href="css/one_page.css">
+		<script src="JS/one_page_website.js" defer></script>
+		<link rel="stylesheet" href="css/one_page.css">
     </head>
 	<body>
 		
-	<!-- NAV -->
-	<div class="wrap">
-		<div class="menu-container"></div>		
-			<ul class="menu">
-				<a href="#home"><li>HOME</li></a>
-				<a href="#gallery"><li>GALLERY</li></a>
-				<a href="#contact"><li>RESERVATIONS</li></a>
-			</ul>
+		<!-- NAV -->
+		<div class="wrap">
+			<div class="menu-container"></div>
+				<ul class="menu">
+					<a href="#home"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>RESERVATIONS</li></a>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<!-- END NAV -->
+		<!-- END NAV -->
 			
-	<!-- HOME -->
-	<div id="home">
-		<div class ="container">
-			<div class="text-center">
-				<span class="head-main">Pacific Air Tours</span>
-				<p class= "head-sub-main">Explore the Northwest</p>
+		<!-- HOME -->
+		<div id="home">
+			<div class ="container">
+				<div class="text-center">
+					<span class="head-main">Pacific Air Tours</span>
+					<p class= "head-sub-main">Explore the Northwest</p>
+				</div>
 			</div>
 		</div>
-	</div>
 			
-	<!-- GALLERY -->
-	<section id="gallery">
-		<div class="container">
-			<h1>GALLERY</h1>
-			<div class="flex-container">
+		<!-- GALLERY -->
+		<section id="gallery">
+			<div class="container">
+				<h1>GALLERY</h1>
+				<div class="flex-container">
+			<!-- PHOTO-CONTAINER 1 -->
+					<div class="photo-container">
+						<div class="photo" onclick="openModal();currentSlide(1)">
+							<img src="./images/thumb/thumbnail_1.png" alt="Crater Lake" width=350 height=250
+							 class="hover-shadow">	
+							<div class="photo-overlay">									
+								<h3 class="white-head">CRATER LAKE</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+			<!-- END PHOTO-CONTAINER 1 -->
 
-		<!-- PHOTO-CONTAINER 1 -->
-		<div class="photo-container">
-			<div class="photo">
-				<img src="./images/thumb/thumbnail_1.png" alt="Crater Lake" width=350 height=250
-					onclick="openModal();currentSlide(9)" class="hover-shadow">	
-				<div class="photo-overlay">									
-					<h3 class="white-head">CRATER LAKE</h3>
-					<p></p>
-				</div>
-			</div>
-		</div>
-		<!-- END PHOTO-CONTAINER 1 -->
+			<!-- PHOTO-CONTAINER 2 -->
+					<div class="photo-container">
+						<div class="photo" onclick="openModal();currentSlide(2)">
+							<img src="./images/thumb/thumbnail_2.png" alt="Portland Skyline" width=350 height=250
+							class="hover-shadow">	
+							<div class="photo-overlay">
+								<h3>PORTLAND</h3>
+								<p></p>								
+							</div>
+						</div>
+					</div>
+			<!-- END PHOTO-CONTAINER 2 -->
 
-		<!-- PHOTO-CONTAINER 2 -->
-		<div class="photo-container">
-			<div class="photo">
-				<img src="./images/thumb/thumbnail_2.png" alt="Portland Skyline" width=350 height=250
-					onclick="openModal();currentSlide(9)" class="hover-shadow">	
-				<div class="photo-overlay">
-					<h3>PORTLAND</h3>
-					<p></p>								
-				</div>
-			</div>
-		</div>
-		<!-- END PHOTO-CONTAINER 2 -->
+			<!-- PHOTO-CONTAINER 3 -->		
+					<div class="photo-container">
+						<div class="photo" onclick="openModal();currentSlide(3)">
+							<img src="./images/thumb/thumbnail_3.png" alt="Sunset in Seattle" width=350 height=250
+							class="hover-shadow">
+							<div class="photo-overlay">
+								<h3>SEATTLE</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+			<!-- END PHOTO-CONTAINER 3 -->
 
-		<!-- PHOTO-CONTAINER 3 -->		
-		<div class="photo-container">
-			<div class="photo">
-				<img src="./images/thumb/thumbnail_3.png" alt="Sunset in Seattle" width=350 height=250
-					onclick="openModal();currentSlide(9)" class="hover-shadow">
-				<div class="photo-overlay">
-					<h3>SEATTLE</h3>
-					<p></p>
-				</div>
-			</div>
-		</div>
-		<!-- END PHOTO-CONTAINER 3 -->
+			<!-- PHOTO-CONTAINER 4 -->
+					<div class="photo-container">
+						<div class="photo" onclick="openModal();currentSlide(4)">
+							<img src="./images/thumb/thumbnail_4.png" alt="Mt Hood National Forest" width=350 height=250
+							class="hover-shadow">	
+							<div class="photo-overlay">
+								<h3>MT HOOD</h3>
+								<p></p>	
+							</div>
+						</div>
+					</div>					
+			<!-- END PHOTO-CONTAINER 4 -->
 
-		<!-- PHOTO-CONTAINER 4 -->
-		<div class="photo-container">
-			<div class="photo">
-				<img src="./images/thumb/thumbnail_4.png" alt="Mt Hood National Forest" width=350 height=250
-					onclick="openModal();currentSlide(9)" class="hover-shadow">	
-				<div class="photo-overlay">
-					<h3>MT HOOD</h3>
-					<p></p>	
-				</div>
-			</div>
-		</div>					
-		<!-- END PHOTO-CONTAINER 4 -->
+			<!-- PHOTO-CONTAINER 5 -->		
+					<div class="photo-container">
+						<div class="photo" onclick="openModal();currentSlide(5)">
+							<img src="./images/thumb/thumbnail_5.png" alt="Painted Hills" width=350 height=250
+							class="hover-shadow">
+							<div class="photo-overlay">
+								<h3>PAINTED HILLS</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+			<!-- END PHOTO-CONTAINER 5 -->
 
-		<!-- PHOTO-CONTAINER 5 -->		
-		<div class="photo-container">
-			<div class="photo">
-				<img src="./images/thumb/thumbnail_5.png" alt="Painted Hills" width=350 height=250
-					onclick="openModal();currentSlide(9)"  class="hover-shadow">
-				<div class="photo-overlay">
-					<h3>PAINTED HILLS</h3>
-					<p></p>
-				</div>
-			</div>
-		</div>
-		<!-- END PHOTO-CONTAINER 5 -->
+			<!-- PHOTO-CONTAINER 6 -->		
+					<div class="photo-container">
+						<div class="photo" onclick="openModal();currentSlide(6)">
+							<img src="./images/thumb/thumbnail_6.png" alt="Oregon Coast" width=350 height=250
+							class="hover-shadow">	
+							<div class="photo-overlay">
+								<h3>PACIFIC COAST</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+			<!-- END PHOTO-CONTAINER 6 -->
 
-		<!-- PHOTO-CONTAINER 6 -->		
-		<div class="photo-container">
-			<div class="photo">
-				<img src="./images/thumb/thumbnail_6.png" alt="Oregon Coast" width=350 height=250
-					onclick="openModal();currentSlide(9)"  class="hover-shadow">	
-				<div class="photo-overlay">
-					<h3>PACIFIC COAST</h3>
-					<p></p>
-				</div>
-			</div>
-		</div>
-		<!-- END PHOTO-CONTAINER 6 -->
+			<!-- PHOTO-CONTAINER 7 -->		
+					<div class="photo-container">
+						<div class="photo" onclick="openModal();currentSlide(7)">
+							<img src="./images/thumb/thumbnail_7.png" alt="Columbia River Gorge" width=350 height=250
+							class="hover-shadow">	
+							<div class="photo-overlay">
+								<h3>COLUMBIA RIVER</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+			<!-- END PHOTO-CONTAINER 7 -->
 
-		<!-- PHOTO-CONTAINER 7 -->		
-		<div class="photo-container">
-			<div class="photo">
-				<img src="./images/thumb/thumbnail_7.png" alt="Columbia River Gorge" width=350 height=250
-					onclick="openModal();currentSlide(9)" class="hover-shadow">	
-				<div class="photo-overlay">
-					<h3>COLUMBIA RIVER</h3>
-					<p></p>
-				</div>
-			</div>
-		</div>
-		<!-- END PHOTO-CONTAINER 7 -->
+			<!-- PHOTO-CONTAINER 8 -->		
+					<div class="photo-container">
+						<div class="photo" onclick="openModal();currentSlide(8)" >
+							<img src="./images/thumb/thumbnail_8.png" alt="North Cascades National Park" width=350 height=250
+							class="hover-shadow">	
+							<div class="photo-overlay">
+								<h3>CASCADES RANGE</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+			<!-- END PHOTO-CONTAINER 8 -->
 
-		<!-- PHOTO-CONTAINER 8 -->		
-		<div class="photo-container">
-			<div class="photo">
-				<img src="./images/thumb/thumbnail_8.png" alt="North Cascades National Park" width=350 height=250 
-					onclick="openModal();currentSlide(9)"  class="hover-shadow">	
-				<div class="photo-overlay">
-					<h3>CASCADES RANGE</h3>
-					<p></p>
-				</div>
-			</div>
-		</div>
-		<!-- END PHOTO-CONTAINER 8 -->
-
-		<!-- PHOTO-CONTAINER 9 -->
-		<div class="photo-container">
-			<div class="photo">
-				<img src="./images/thumb/thumbnail_9.png" alt="Fairy Falls" width=350 height=250 
-					onclick="openModal();currentSlide(9)" class="hover-shadow">	
-				<div class="photo-overlay">
-					<h3>FAIRY FALLS</h3>
-					<p></p>
-				</div>
-			</div>
-		</div>
-		<!-- END PHOTO-CONTAINER 9 -->
-
+			<!-- PHOTO-CONTAINER 9 -->
+					<div class="photo-container">
+						<div class="photo" onclick="openModal();currentSlide(9)">
+							<img src="./images/thumb/thumbnail_9.png" alt="Fairy Falls" width=350 height=250 
+							class="hover-shadow">	
+							<div class="photo-overlay">
+								<h3>FAIRY FALLS</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+			<!-- END PHOTO-CONTAINER 9 -->
 			<!-- Modal/Lightbox -->
 			<div id="myModal" class="modal">
 				<span class="close cursor" onclick="closeModal()">&times;</span>
 				<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 9</div>
+							<img class="demo cursor" src="images/thumb/thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="CRATER LAKE">
+						</div>
 						  
-				<div class="mySlides">
-					<div class="numbertext">1 / 9</div>
-					<img src="images/thumb/thumbnail_1.png">
-				</div>
+						<div class="mySlides">
+							<div class="numbertext">2 / 9</div>
+							<img class="demo cursor" src="images/thumb/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="PORTLAND">
+						</div>
 						  
-				<div class="mySlides">
-					<div class="numbertext">2 / 9</div>
-					<img src="images/thumb/thumbnail_2.png">
-				</div>
-						  
-				<div class="mySlides">
-					<div class="numbertext">3 / 9</div>
-					<img src="images/thumb/thumbnail_3.png">
-				</div>
+						<div class="mySlides">
+							<div class="numbertext">3 / 9</div>
+							<img class="demo cursor" src="images/thumb/thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="SEATTLE">
+						</div>
 							  
-				<div class="mySlides">
-					<div class="numbertext">4 / 9</div>
-					<img src="images/thumb/thumbnail_4.png">
-				</div>
+						<div class="mySlides">
+							<div class="numbertext">4 / 9</div>
+							<img class="demo cursor" src="images/thumb/thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="MT HOOD">
+						</div>
 
-				<div class="mySlides">
-					<div class="numbertext">5 / 9</div>
-					<img src="images/thumb/thumbnail_5.png">
-				</div>
+						<div class="mySlides">
+							<div class="numbertext">5 / 9</div>
+							<img class="demo cursor" src="images/thumb/thumbnail_5.png" style="width:100%" onclick="currentSlide(5)" alt="PAINTED HILLS">
+						</div>
 
-				<div class="mySlides">
-					<div class="numbertext">6 / 9</div>
-					<img src="images/thumb/thumbnail_6.png">
-				</div>
+						<div class="mySlides">
+							<div class="numbertext">6 / 9</div>
+							<img class="demo cursor" src="images/thumb/thumbnail_6.png" style="width:100%" onclick="currentSlide(6)" alt="PACIFIC COAST">
+						</div>
 
-				<div class="mySlides">
-					<div class="numbertext">7 / 9</div>
-					<img src="images/thumb/thumbnail_7.png">
-				</div>
+						<div class="mySlides">
+							<div class="numbertext">7 / 9</div>
+							<img class="demo cursor" src="images/thumb/thumbnail_7.png" style="width:100%" onclick="currentSlide(7)" alt="COLUMBIA RIVER">
+						</div>
 
-				<div class="mySlides">
-					<div class="numbertext">8 / 9</div>
-					<img src="images/thumb/thumbnail_8.png">
-				</div>
+						<div class="mySlides">
+							<div class="numbertext">8 / 9</div>
+							<img class="demo cursor" src="images/thumb/thumbnail_8.png" style="width:100%" onclick="currentSlide(8)" alt="CASCADES RANGE">
+						</div>
 
-				<div class="mySlides">
-					<div class="numbertext">9 / 9</div>
-					<img src="images/thumb/thumbnail_9.png">
-				</div>
+						<div class="mySlides">
+							<div class="numbertext">9 / 9</div>
+							<img class="demo cursor" src="images/thumb/thumbnail_9.png" style="width:100%" onclick="currentSlide(9)" alt="FAIRY FALLS">
+						</div>
 		
-				<!-- Next/previous controls -->
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
 					  
-				<!-- Caption text -->
-				<div class="caption-container">
-				<p id="caption"></p>
-				</div>
-			
-						<!-- Thumbnail image controls -->
-						<div class="column">
-							<img class="demo cursor" src="images/thumb/thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="">
-	  					</div>
-  
-	  					<div class="column">
-							<img class="demo cursor" src="images/thumb/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="">
-	  					</div>
-  
-	  					<div class="column">
-							<img class="demo cursor" src="images/thumb/thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="">
-	  					</div>
-  
-						<div class="column">
-							<img class="demo cursor" src="images/thumb/thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="">
-	  					</div>
-
-	  					<div class="column">
-							<img class="demo cursor" src="images/thumb/thumbnail_5.png" style="width:100%" onclick="currentSlide(5)" alt="">
-	  					</div>
-
-	  					<div class="column">
-							<img class="demo cursor" src="images/thumb/thumbnail_6.png" style="width:100%" onclick="currentSlide(6)" alt="">
-	  					</div>
-	  					
-						<div class="column">
-							<img class="demo cursor" src="images/thumb/thumbnail_7.png" style="width:100%" onclick="currentSlide(7)" alt="">
-	  					</div>
-
-	  					<div class="column">
-							<img class="demo cursor" src="images/thumb/thumbnail_8.png" style="width:100%" onclick="currentSlide(8)" alt="">
-	  					</div>
-
-	  					<div class="column">
-							<img class="demo cursor" src="images/thumb/thumbnail_9.png" style="width:100%" onclick="currentSlide(9)" alt="">
-	  					</div>
+						<!-- Caption text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
 					</div>
 				</div>  
 			</div>
 		</div>
-	</section>
+		</section>
 		<!-- END GALLERY -->
 			
 			<!-- RSVP -->
@@ -311,4 +273,3 @@
 </html>
 
 	
-
