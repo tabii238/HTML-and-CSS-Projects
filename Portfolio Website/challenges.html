@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final JS Challenges</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #page1 {
+            height: 400px;
+            background-color: pink;
+        }
+
+        #page2 {
+            height: 400px;
+            background-color: orange;
+        }
+
+        body {
+            opacity: 0;
+            transition: opacity 5s;
+        }
+
+        #slideshow {
+            margin: 50px auto;
+            position: relative;
+            width: 240px;
+            height: 240px;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+
+        #slideshow > div {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+        }
+    </style>
+
+    <script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    }, 3000);
+    </script>
+
+    <script>
+        function validateForm() {
+            let a = document.forms["myForm"]["fname"].value;
+            if (a == "") {
+                alert("Please provide your first name");
+                return false;
+            }
+            let b = document.forms["myForm"]["lname"].value;
+            if (b == "") {
+                alert("Please provide your last name");
+                return false;
+            }
+            let c = document.forms["myForm"]["email"].value;
+            if (c == "") {
+                alert("Please provide your email");
+                return false;
+            }
+        }
+    </script>  
+</head>   
+<body onload="document.body.style.opacity='1'">
+ 
+    <h1 style="font-size:5vw;">Challenge 1: Responsive Text</h1>
+
+    <p style ="font-size:5vw;">This font size is set to 5vw, which sets the size to 5% of the viewport width.</p>
+   
+    <h2>Challenge 2: Fade-Out</h2>
+    <p>This page will fade in when loaded</p>
+
+    <h2>Challenge 3: Form with JS Form Validation</h2>
+    <form name="myForm" action="" onsubmit="return validateForm()" method="POST">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <input type="text" id="message" name="message"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Challenge 4 + Challenge 9: Sticky Popup Contact Form:</h2>
+
+    <h2>Challenge 5: Animation</h2>
+
+    <h2>Challenge 6: Zoom In and Out</h2>
+
+    <h2>Challenge 7: Bookmark Challenge</h2>
+        <h3>Smooth Scroll</h3>
+            <div class="one" id="page1">
+                <h2>Page 1</h2>
+                <p>Click on the link to see "smooth" scrolling effect</p>
+                <a href="#page2">Click here to Smooth Scroll to Page 2 Below</a>
+            </div>
+
+            <div class="two" id="page2">
+                <h2>Page 2</h2>
+                <a href="#page1">Click here to Smooth Scroll to Page 1 Above!</a>
+            </div>
+
+    <h2>Challenge 8: Slideshow</h2>
+        <div id="slideshow">
+            <div>
+                <img src="harper_beach.jpg" width=300 height=300>
+            </div>
+            <div>
+                <img src="harper_beach2.jpg" width=300 height=300>
+            </div>
+        </div>
+    <h2>Challenge 8: Horizontal Rule</h2>
+        <hr> <!--horizontal rule tag-->
+        <p>This paragraph displays an example of a horizontal rule being used!</p>
+
+    <h2>Challenge 9: JSON Stringify</h2>
+        <p id="car"></p>
+
+    <script>
+        /* JS dictionary object */
+        var car = {make: "Ford", model: "Mustang", year: 1998};
+        /*convert JS objects to string format */
+        var JSONstring = JSON.stringify(car);
+        document.getElementById("car").innerHTML = JSONstring;
+    </script>
+
+    <h2>Challenge 10: JSON.parse() method</h2>
+        <p id="gabby"></p>
+    <script>
+    /* JS dictionary object */
+    var car = '{"make": "Toyota", "model": "Prius", "color": "blue"}';
+    /*convert JS objects to string format */
+    var JSONstring = JSON.parse(car);
+    document.getElementById("gabby").innerHTML = " Gabby has a " + JSONstring.color + " " +
+        JSONstring.make + " " + JSONstring.model;
+</script>
+
+
+    <h2>Challenge 11: LocalStorage() method</h2>
+        <p id="oldCar"></p>
+
+        <script>
+        /* set the data as a key/value pair to be saved locally in your browser */
+        localStorage.setItem("model", "Mustang");
+        /* then use the key "Name" to return its value "Honda" */
+        document.getElementById("oldCar").innerHTML = localStorage.getItem("model");
+
+        </script>
+
+</body>
+</html>
