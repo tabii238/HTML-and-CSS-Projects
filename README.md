@@ -14,7 +14,7 @@ This website was styled using Bootsrap 4 and contains a navbar, jumbotron, conta
 
 Portfolio Website:
 
-This is the live website assignment where I purchased my own domain and published the site online. It was styled using CSS and contains a navbar, about section, contact section, as well as links to my github and LinkedIn accounts! 
+This is the live website assignment where I purchased my own domain and published the site online. It was styled using CSS and contains a navbar, about section, contact section, as well as links to my github and LinkedIn accounts! Some Javascript animation was added later as well.
 
 Miscelaneous Files:
 
