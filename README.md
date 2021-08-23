@@ -1,7 +1,7 @@
 # Projects:
-- [Air Tours Site:](https://github.com/tabii238/HTML-and-CSS-Projects/tree/main/One-Page-Website)
-- [Movie Theater Site:](https://github.com/tabii238/HTML-and-CSS-Projects/tree/main/bootstrap4_project)
-- [Portfolio Website:](https://github.com/tabii238/HTML-and-CSS-Projects/tree/main/Portfolio%20Website)
+- [Air Tours Site](https://github.com/tabii238/HTML-and-CSS-Projects/tree/main/One-Page-Website)
+- [Movie Theater Site](https://github.com/tabii238/HTML-and-CSS-Projects/tree/main/bootstrap4_project)
+- [Portfolio Website](https://github.com/tabii238/HTML-and-CSS-Projects/tree/main/Portfolio%20Website)
 
 
 Air Tours Site:
